@@ -49,21 +49,19 @@ end
 
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+    # Write a method that adds a new holiday and its associated supplies to any season.
   holiday_hash.each do |season, holidays|
-    if season == :fall
-      holidays.each do |holiday_name, supplies|
-        {:holiday_name => [supplies]}
-        # binding.pry
-
-      end
-    end
+    puts season 
+    puts holidays
+      # binding.pry
+    #   end
+    # end
   end
   # remember to return the updated hash
 end
 
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
-
 end
 
 def all_supplies_in_holidays(holiday_hash)
@@ -74,11 +72,15 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
 end
+
+
+# holiday_hash.each do |season, holidays|
+#   if season == :fall
+#     holidays.each do |holiday_name, supplies|
+#       puts supplies
